@@ -5,10 +5,7 @@
 </script>
 
 <nav class="py-4 px-16 flex gap-4 justify-center bg-neutral-600 items-center">
-	<Navlink href="/about">About</Navlink>
-	<Navlink>Portfolio</Navlink>
 	<Navlink>Contact</Navlink>
-	<Navlink>Blog</Navlink>
 </nav>
 
 <slot />

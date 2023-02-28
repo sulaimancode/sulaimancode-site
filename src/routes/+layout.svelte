@@ -4,11 +4,12 @@
 	import Navlink from './Navlink.svelte';
 </script>
 
-<nav class="flex justify-center items-center gap-4 py-4 px-16 backdrop-blur-sm sticky top-0">
-	<Navlink>Home</Navlink>
-	<Navlink>Skills</Navlink>
-	<Navlink>Experience</Navlink>
-	<Navlink>Contact</Navlink>
-</nav>
-
-<slot />
+<div class="flex flex-col items-center p-6">
+	<nav class="flex justify-center items-center gap-4 py-4 px-16 backdrop-blur-sm sticky top-0">
+		<Navlink>Home</Navlink>
+		<Navlink>Skills</Navlink>
+		<Navlink>Experience</Navlink>
+		<Navlink>Contact</Navlink>
+	</nav>
+	<slot />
+</div>

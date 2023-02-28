@@ -2,4 +2,4 @@
 	export let href = '/';
 </script>
 
-<a {href} class="text-slate-50 hover:underline"><slot /></a>
+<a {href} class="hover:underline"><slot /></a>

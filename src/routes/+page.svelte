@@ -2,7 +2,7 @@
 	import Navlink from './Navlink.svelte';
 </script>
 
-<div class="flex h-full flex-col items-center">
+<div class="flex flex-col items-center gap-16">
 	<nav
 		class="sticky top-0 flex w-full items-center justify-center gap-4 py-4 px-16 backdrop-blur-sm"
 	>
@@ -12,16 +12,29 @@
 		<Navlink>Contact</Navlink>
 	</nav>
 
-	<div class="my-auto flex flex-col items-center justify-center gap-6 sm:flex-row">
-		<img
-			src="/sulai-pic-sm.jpg"
-			alt="Sulai's profile"
-			class="h-32 w-32 rounded-full object-cover"
-		/>
-		<div class="w-[85%] rounded-md bg-neutral-800 p-4 sm:w-[60%]">
-			<p  >
-				Hello 👋 I am Sulaiman, a software engineer from the UK. I enjoy creating and building stuff
-				with code. Currently working at <a
+	<p>Hello 👋 I am Sulaiman, a software engineer based in the UK.</p>
+
+	<div class="p-6 grid grid-cols-2 gap-6">
+		<div>
+			<h1 class="text-xl ">About me</h1>
+			<p class="mb-4">
+				I am a software engineer with 4+ years of professional experience. I have a deep passion for
+				building and creating with code. I first began teaching myself to code using online
+				resources, but I soon realized I needed a more immersive learning experience. That's when I
+				discovered <a class="text-blue-200 hover:underline" href="https://www.makers.tech/"
+					>Makers</a
+				>, an intensive coding bootcamp where I had the opportunity to learn alongside an incredible
+				group of peers.
+			</p>
+			<p class="mb-4">
+				Since then, I've worked across the stack, but I have a particular affinity for frontend
+				technology. I've honed my skills in Typescript, Javascript, React, Redux, and
+				React-testing-library, and I'm always eager to learn more about the latest tools and
+				techniques in the field.
+			</p>
+			<p>
+				Currently I'm working at
+				<a
 					class="text-blue-200 hover:underline"
 					href="https://www.ocadogroup.com/about-us/ocado-technology/">Ocado Technology</a
 				>, building robust and accessible UIs for the
@@ -32,5 +45,7 @@
 				>
 			</p>
 		</div>
+
+		<div>Tech I've used to build stuff (my skill stack):</div>
 	</div>
 </div>

@@ -1,5 +1,6 @@
 <script>
 	import Navlink from './Navlink.svelte';
+	import ListItem from './ListItem.svelte';
 </script>
 
 <div class="flex flex-col items-center gap-16">
@@ -49,19 +50,17 @@
 		<div class="flex flex-col gap-4">
 			<h1>Tech I am currently using:</h1>
 			<ul>
-				<li class="before:content-['▷'] before:mr-2">Javascript</li>
-				<li class="before:content-['▷'] before:mr-2">Typescript</li>
-				<li class="before:content-['▷'] before:mr-2">React</li>
-				<li class="before:content-['▷'] before:mr-2">Redux</li>
-				<li class="before:content-['▷'] before:mr-2">
-					SvelteKit (using it to build this website, don't ask me why)
-				</li>
+				<ListItem>Javascript</ListItem>
+				<ListItem>Typescript</ListItem>
+				<ListItem>React</ListItem>
+				<ListItem>Redux</ListItem>
+				<ListItem>SvelteKit (using it to build this website, don't ask me why)</ListItem>
 			</ul>
 			<h1>Other stuff I've used:</h1>
 			<ul>
-				<li class="before:content-['▷'] before:mr-2">C#</li>
-				<li class="before:content-['▷'] before:mr-2">.Net</li>
-				<li class="before:content-['▷'] before:mr-2">Ruby</li>
+				<ListItem>C#</ListItem>
+				<ListItem>.Net</ListItem>
+				<ListItem>Ruby</ListItem>
 			</ul>
 		</div>
 	</div>

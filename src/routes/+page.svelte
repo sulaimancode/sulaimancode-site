@@ -1,6 +1,5 @@
 <script>
 	import Navlink from './Navlink.svelte';
-	import TechBox from './TechBox.svelte';
 </script>
 
 <div class="flex flex-col items-center gap-16">
@@ -47,14 +46,23 @@
 			</p>
 		</div>
 
-		<div>
-			<h1>Tech I've used to build stuff (my skill stack):</h1>
-			<div class="flex h-full w-full items-center justify-center relative">
-				<TechBox top="top-[60px]" color="blue" />
-				<TechBox top="top-[100px]" color="green" />
-				<TechBox top="top-[140px]" color="red" />
-				<TechBox top="top-[180px]" color="orange" />
-			</div>
+		<div class="flex flex-col gap-4">
+			<h1>Tech I am currently using:</h1>
+			<ul>
+				<li class="before:content-['▷'] before:mr-2">Javascript</li>
+				<li class="before:content-['▷'] before:mr-2">Typescript</li>
+				<li class="before:content-['▷'] before:mr-2">React</li>
+				<li class="before:content-['▷'] before:mr-2">Redux</li>
+				<li class="before:content-['▷'] before:mr-2">
+					SvelteKit (using it to build this website, don't ask me why)
+				</li>
+			</ul>
+			<h1>Other stuff I've used:</h1>
+			<ul>
+				<li class="before:content-['▷'] before:mr-2">C#</li>
+				<li class="before:content-['▷'] before:mr-2">.Net</li>
+				<li class="before:content-['▷'] before:mr-2">Ruby</li>
+			</ul>
 		</div>
 	</div>
 </div>

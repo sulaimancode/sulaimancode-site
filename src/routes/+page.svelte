@@ -1,5 +1,6 @@
 <script>
 	import Navlink from './Navlink.svelte';
+	import TechBox from './TechBox.svelte';
 </script>
 
 <div class="flex flex-col items-center gap-16">
@@ -14,7 +15,7 @@
 
 	<p>Hello 👋 I am Sulaiman, a software engineer based in the UK.</p>
 
-	<div class="p-6 grid grid-cols-2 gap-6">
+	<div class="p-6 grid grid-cols-2 gap-44">
 		<div>
 			<h1 class="text-xl ">About me</h1>
 			<p class="mb-4">
@@ -46,6 +47,14 @@
 			</p>
 		</div>
 
-		<div>Tech I've used to build stuff (my skill stack):</div>
+		<div>
+			<h1>Tech I've used to build stuff (my skill stack):</h1>
+			<div class="flex h-full w-full items-center justify-center relative">
+				<TechBox top="top-[60px]" color="blue" />
+				<TechBox top="top-[100px]" color="green" />
+				<TechBox top="top-[140px]" color="red" />
+				<TechBox top="top-[180px]" color="orange" />
+			</div>
+		</div>
 	</div>
 </div>

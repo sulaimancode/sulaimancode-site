@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Navlink from './Navlink.svelte';
 	import ListItem from './ListItem.svelte';
 </script>
@@ -10,13 +10,14 @@
 	<Navlink>Contact</Navlink>
 </nav>
 
-<div class="flex h-screen items-center justify-center">
-	<h1 class="w-1/2 text-center text-5xl font-bold">
-		Hello 👋 I am Sulaiman, a software engineer based in the UK.
-	</h1>
-</div>
+<div class="mx-auto w-[45%]">
+	<div class="py-40">
+		<h1 class="text-center text-3xl font-bold">
+			Hello <span class="inline-block origin-[70%_70%] animate-wave-animation">👋</span>
+			I am Sulaiman, a software engineer based in the UK.
+		</h1>
+	</div>
 
-<div class="grid grid-cols-2 gap-44 p-6">
 	<div>
 		<h1 class="text-xl">About me</h1>
 		<p class="mb-4">

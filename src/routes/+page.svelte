@@ -18,8 +18,8 @@
 		</h1>
 	</div>
 
-	<div>
-		<h1 class="text-xl">About me</h1>
+	<article class="mb-4">
+		<h2 class="mb-2 text-xl font-bold">About me</h2>
 		<p class="mb-4">
 			I am a software engineer with 4+ years of professional experience. I have a deep passion for
 			building and creating with code. I first began teaching myself to code using online resources,
@@ -47,10 +47,11 @@
 				>Ocado Smart Platform</a
 			>
 		</p>
-	</div>
+	</article>
 
-	<div class="flex flex-col gap-4">
-		<h1>Tech I am currently using:</h1>
+	<article>
+		<h2 class="mb-2 text-xl font-bold">Skills</h2>
+
 		<ul>
 			<ListItem>Javascript</ListItem>
 			<ListItem>Typescript</ListItem>
@@ -64,5 +65,5 @@
 			<ListItem>.Net</ListItem>
 			<ListItem>Ruby</ListItem>
 		</ul>
-	</div>
+	</article>
 </div>

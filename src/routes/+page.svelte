@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Navlink from './Navlink.svelte';
 	import ListItem from './ListItem.svelte';
+	import Skill from './Skill.svelte';
 </script>
 
 <nav class="sticky top-0 flex w-full items-center justify-center gap-4 py-4 px-16 backdrop-blur-sm">
@@ -51,14 +52,12 @@
 
 	<article>
 		<h2 class="mb-2 text-xl font-bold">Skills</h2>
+		<Skill name="Typescript" level={0.9} />
+		<Skill name="React" level={0.8} />
+		<Skill name="Redux" level={0.7} />
+		<Skill name="SvelteKit" level={0.25} />
+		<Skill name="Ruby" level={0.5} />
 
-		<ul>
-			<ListItem>Javascript</ListItem>
-			<ListItem>Typescript</ListItem>
-			<ListItem>React</ListItem>
-			<ListItem>Redux</ListItem>
-			<ListItem>SvelteKit (using it to build this website, don't ask me why)</ListItem>
-		</ul>
 		<h1>Other stuff I've used:</h1>
 		<ul>
 			<ListItem>C#</ListItem>

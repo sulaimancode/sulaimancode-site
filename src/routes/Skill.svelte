@@ -1,5 +1,24 @@
 <script lang="ts">
 	export let name: string;
+	export let level: number;
+
+	const red = '#ff4136';
+	const orange = '#ff851b';
+	const green = '#2ecc40';
+
+	let animateValues = `${red}; ${red}; ${orange}; ${orange}; ${green}`;
+	let animateKeyTimes = '0; 0.4; 0.5; 0.55; 1';
+
+	if (level < 0.6) {
+		animateValues = `${red}; ${red}; ${orange}; ${orange}`;
+		animateKeyTimes = '0; 0.4; 0.5; 1';
+	}
+
+	if (level < 0.3) {
+		animateValues = `${red}; ${red}`;
+		animateKeyTimes = '0; 1';
+	}
+
 	let text1: SVGTextElement | undefined;
 
 	let textWidth: number | undefined;
@@ -19,15 +38,15 @@
 					<animate
 						attributeName="width"
 						from="0"
-						to={textWidth}
+						to={textWidth * level}
 						dur={`${duration}s`}
 						fill="freeze"
 					/>
 
 					<animate
 						attributeName="fill"
-						values="#ff4136; #ff851b; #2ecc40"
-						keyTimes={`0; 0.6; 1`}
+						values={animateValues}
+						keyTimes={animateKeyTimes}
 						dur={`${duration}s`}
 						fill="freeze"
 					/>
@@ -42,7 +61,7 @@
 		font-family="sans-serif"
 		font-size="120"
 		font-weight="900"
-		style="stroke: white; stroke-width: 1px;">{name}</text
+		class="stroke-white stroke-1">{name}</text
 	>
 	<text
 		x="0"
@@ -51,6 +70,6 @@
 		font-size="120"
 		font-weight="900"
 		fill={`url(#pattern-${name})`}
-		style="stroke: white; stroke-width: 1px;">{name}</text
+		class="stroke-white stroke-1">{name}</text
 	>
 </svg>

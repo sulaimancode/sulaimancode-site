@@ -45,50 +45,52 @@
 	}
 </script>
 
-<svg bind:this={svg} width={svgWidth} height={40}>
-	<defs>
-		<pattern id={`pattern-${name}`} patternUnits="userSpaceOnUse" width="210" height="40">
-			{#if textWidth && duration}
-				<rect x="0" y="0" height="40" width="0" fill="#ff4136">
-					<animate
-						bind:this={animateWidth}
-						begin="indefinite"
-						attributeName="width"
-						from="0"
-						to={textWidth * level}
-						dur={`${duration}s`}
-						fill="freeze"
-					/>
+<li>
+	<svg bind:this={svg} width={svgWidth} height={40}>
+		<defs>
+			<pattern id={`pattern-${name}`} patternUnits="userSpaceOnUse" width="210" height="40">
+				{#if textWidth && duration}
+					<rect x="0" y="0" height="40" width="0" fill="#ff4136">
+						<animate
+							bind:this={animateWidth}
+							begin="indefinite"
+							attributeName="width"
+							from="0"
+							to={textWidth * level}
+							dur={`${duration}s`}
+							fill="freeze"
+						/>
 
-					<animate
-						bind:this={animateFill}
-						begin="indefinite"
-						attributeName="fill"
-						values={animateValues}
-						keyTimes={animateKeyTimes}
-						dur={`${duration}s`}
-						fill="freeze"
-					/>
-				</rect>
-			{/if}
-		</pattern>
-	</defs>
-	<text
-		bind:this={text1}
-		x="0"
-		y="25"
-		font-family="sans-serif"
-		font-size={fontSize}
-		font-weight="900"
-		class="stroke-white stroke-1">{name}</text
-	>
-	<text
-		x="0"
-		y="25"
-		font-family="sans-serif"
-		font-size={fontSize}
-		font-weight="900"
-		fill={`url(#pattern-${name})`}
-		class="stroke-white stroke-1">{name}</text
-	>
-</svg>
+						<animate
+							bind:this={animateFill}
+							begin="indefinite"
+							attributeName="fill"
+							values={animateValues}
+							keyTimes={animateKeyTimes}
+							dur={`${duration}s`}
+							fill="freeze"
+						/>
+					</rect>
+				{/if}
+			</pattern>
+		</defs>
+		<text
+			bind:this={text1}
+			x="0"
+			y="25"
+			font-family="sans-serif"
+			font-size={fontSize}
+			font-weight="900"
+			class="stroke-white stroke-1">{name}</text
+		>
+		<text
+			x="0"
+			y="25"
+			font-family="sans-serif"
+			font-size={fontSize}
+			font-weight="900"
+			fill={`url(#pattern-${name})`}
+			class="stroke-white stroke-1">{name}</text
+		>
+	</svg>
+</li>

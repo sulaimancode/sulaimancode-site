@@ -54,23 +54,15 @@
 
 	<article>
 		<h2 class="mb-2 text-xl font-bold">Skills</h2>
-		<div class="flex flex-wrap gap-4">
-			<Skill name="Typescript" level={0.9} {animate} />
-			<Skill name="React" level={0.8} {animate} />
+		<ul class="flex list-none flex-wrap gap-4">
+			<Skill name="HTML" level={0.97} {animate} />
+			<Skill name="CSS" level={0.59} {animate} />
+			<Skill name="Typescript" level={0.79} {animate} />
+			<Skill name="React" level={0.9} {animate} />
 			<Skill name="Redux" level={0.7} {animate} />
 			<Skill name="SvelteKit" level={0.25} {animate} />
-			<Skill name="Ruby" level={0.5} {animate} />
-		</div>
-		<button
-			on:click={() => {
-				animate = true;
-			}}>click to animate</button
-		>
-		<h1>Other stuff I've used:</h1>
-		<ul>
-			<ListItem>C#</ListItem>
-			<ListItem>.Net</ListItem>
-			<ListItem>Ruby</ListItem>
+			<Skill name="C#" level={0.2} {animate} />
+			<Skill name="Ruby" level={0.2} {animate} />
 		</ul>
 	</article>
 </div>

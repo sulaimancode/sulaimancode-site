@@ -1,7 +1,6 @@
 <script lang="ts">
-	import Navlink from './Navlink.svelte';
-	import ListItem from './ListItem.svelte';
-	import Skill from './Skill.svelte';
+	import Navlink from '../components/Navlink.svelte';
+	import Skill from '../components/Skill.svelte';
 
 	let animate = false;
 </script>
@@ -63,6 +62,11 @@
 			<Skill name="C#" level={0.2} {animate} />
 			<Skill name="Ruby" level={0.2} {animate} />
 		</ul>
+		<button
+			on:click={() => {
+				animate = true;
+			}}>animate</button
+		>
 	</div>
 
 	<section>

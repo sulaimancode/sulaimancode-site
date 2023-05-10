@@ -3,9 +3,9 @@
 	export let level: number;
 	export let animate: boolean;
 
-	const red = '#ff4136';
-	const orange = '#ff851b';
-	const green = '#2ecc40';
+	const red = '#f87171';
+	const orange = '#fb923c';
+	const green = '#4ade80';
 	const fontSize = 30;
 
 	let animateValues = `${red}; ${red}; ${orange}; ${orange}; ${green}`;
@@ -50,7 +50,7 @@
 		<defs>
 			<pattern id={`pattern-${name}`} patternUnits="userSpaceOnUse" width="210" height="40">
 				{#if textWidth && duration}
-					<rect x="0" y="0" height="40" width="0" fill="#ff4136">
+					<rect x="0" y="0" height="40" width="0">
 						<animate
 							bind:this={animateWidth}
 							begin="indefinite"
@@ -81,7 +81,8 @@
 			font-family="sans-serif"
 			font-size={fontSize}
 			font-weight="900"
-			class="stroke-white stroke-1">{name}</text
+			fill="transparent"
+			class="stroke-white stroke-[0.3] ">{name}</text
 		>
 		<text
 			x="0"
@@ -90,7 +91,7 @@
 			font-size={fontSize}
 			font-weight="900"
 			fill={`url(#pattern-${name})`}
-			class="stroke-white stroke-1">{name}</text
+			class="stroke-white stroke-[0.3]">{name}</text
 		>
 	</svg>
 </li>

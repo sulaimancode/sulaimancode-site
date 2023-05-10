@@ -31,7 +31,7 @@
 	<Navlink>Contact</Navlink>
 </nav>
 
-<div class="mx-auto w-[60%]">
+<div class="mx-auto max-w-2xl px-6">
 	<div class="py-40">
 		<h1 class="text-center text-3xl font-bold">
 			Hello <span class="inline-block origin-[70%_70%] animate-wave-animation">👋</span>

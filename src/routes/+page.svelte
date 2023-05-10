@@ -3,6 +3,25 @@
 	import Skill from '../components/Skill.svelte';
 
 	let animate = false;
+	let skillsElement: HTMLElement | undefined;
+	let intersectionObserver: IntersectionObserver | undefined;
+
+	if (typeof IntersectionObserver !== 'undefined') {
+		intersectionObserver = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						animate = true;
+					}
+				});
+			},
+			{ threshold: 1.0 }
+		);
+	}
+
+	$: if (skillsElement && intersectionObserver) {
+		intersectionObserver.observe(skillsElement);
+	}
 </script>
 
 <nav class="sticky top-0 flex w-full items-center justify-center gap-4 py-4 px-16 backdrop-blur-sm">
@@ -50,7 +69,7 @@
 		</p>
 	</article>
 
-	<div class="mb-16">
+	<div bind:this={skillsElement} class="mb-16">
 		<h2 class="mb-2 text-xl font-bold">Skills</h2>
 		<ul class="flex list-none flex-wrap gap-4">
 			<Skill name="HTML" level={0.97} {animate} />
@@ -62,11 +81,6 @@
 			<Skill name="C#" level={0.2} {animate} />
 			<Skill name="Ruby" level={0.2} {animate} />
 		</ul>
-		<button
-			on:click={() => {
-				animate = true;
-			}}>animate</button
-		>
 	</div>
 
 	<section>

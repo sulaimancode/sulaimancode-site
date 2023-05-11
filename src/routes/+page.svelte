@@ -2,6 +2,7 @@
 	import Link from '../components/Link.svelte';
 	import Navlink from '../components/Navlink.svelte';
 	import Skill from '../components/Skill.svelte';
+	import TimelineItem from '../components/TimelineItem.svelte';
 
 	let animate = false;
 	let skillsElement: HTMLElement | undefined;
@@ -83,30 +84,16 @@
 		<h2 class="mb-2 text-xl font-bold">Experience</h2>
 
 		<ol class="relative border-l border-gray-200 dark:border-gray-700">
-			<li class="mb-10 ml-4">
-				<div
-					class="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"
-				/>
-				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-					>Jun 2022 - present</time
-				>
-				<h3 class="text-lg font-semibold text-gray-900 dark:text-white">Ocado Technology</h3>
-				<p class="mb-4 text-base font-normal text-gray-500 dark:text-slate-300">
-					Building robust and accessible UI for the Ocado smart platform
-				</p>
-			</li>
-			<li class="mb-10 ml-4">
-				<div
-					class="absolute -left-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"
-				/>
-				<time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-					>Nov 2017 - Dec 2020</time
-				>
-				<h3 class="text-lg font-semibold text-gray-900 dark:text-slate-300">Redgate Software</h3>
-				<p class="text-base font-normal text-gray-500 dark:text-slate-300">
-					Worked on several desktop applications using Electron and .Net
-				</p>
-			</li>
+			<TimelineItem
+				date="2021 - Present"
+				company="Ocado Technology"
+				description="Building robust and accessible UI for the Ocado smart platform"
+			/>
+			<TimelineItem
+				date="2017 - 2020"
+				company="Redgate Software"
+				description="Worked on several desktop applications using Electron and .Net"
+			/>
 		</ol>
 	</section>
 </div>

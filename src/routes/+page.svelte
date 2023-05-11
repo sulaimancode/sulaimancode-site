@@ -85,9 +85,9 @@
 
 		<ol class="relative border-l border-gray-200 dark:border-gray-700">
 			<TimelineItem
-				date="2021 - Present"
+				date="2022 - Present"
 				company="Ocado Technology"
-				description="Building robust and accessible UI for the Ocado smart platform"
+				description="Building robust and accessible UIs for the Ocado smart platform"
 			/>
 			<TimelineItem
 				date="2017 - 2020"

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Link from '../components/Link.svelte';
 	import Navlink from '../components/Navlink.svelte';
 	import Skill from '../components/Skill.svelte';
 
@@ -44,9 +45,8 @@
 		<p class="mb-4 text-slate-300">
 			I am a software engineer with 4+ years of professional experience. I have a deep passion for
 			building and creating with code. I first began teaching myself to code using online resources,
-			but I soon realized I needed a more immersive learning experience. That's when I discovered <a
-				class="text-blue-300 hover:underline"
-				href="https://www.makers.tech/">Makers</a
+			but I soon realized I needed a more immersive learning experience. That's when I discovered <Link
+				href="https://www.makers.tech/">Makers</Link
 			>, an intensive coding bootcamp where I had the opportunity to learn alongside an incredible
 			group of peers.
 		</p>
@@ -57,15 +57,11 @@
 		</p>
 		<p class="text-slate-300">
 			Currently I'm working at
-			<a
-				class="text-blue-200 hover:underline"
-				href="https://www.ocadogroup.com/about-us/ocado-technology/">Ocado Technology</a
-			>, building robust and accessible UIs for the
-			<a
-				class="text-blue-200 hover:underline"
-				href="https://www.ocadogroup.com/about-us/what-we-do/ocado-smart-platform/"
-				>Ocado Smart Platform</a
-			>
+			<Link href="https://www.ocadogroup.com/about-us/ocado-technology/">Ocado Technology</Link>,
+			building robust and accessible UIs for the
+			<Link href="https://www.ocadogroup.com/about-us/what-we-do/ocado-smart-platform/"
+				>Ocado Smart Platform</Link
+			>.
 		</p>
 	</article>
 

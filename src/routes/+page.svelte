@@ -26,14 +26,18 @@
 	}
 </script>
 
-<nav class="sticky top-0 flex w-full items-center justify-center gap-4 py-4 px-16 backdrop-blur-sm">
-	<Navlink>Home</Navlink>
-	<Navlink>Skills</Navlink>
-	<Navlink>Experience</Navlink>
-	<Navlink>Contact</Navlink>
-</nav>
+<header>
+	<nav
+		class="sticky top-0 flex w-full items-center justify-center gap-4 py-4 px-16 backdrop-blur-sm"
+	>
+		<Navlink>Home</Navlink>
+		<Navlink>Skills</Navlink>
+		<Navlink>Experience</Navlink>
+		<Navlink>Contact</Navlink>
+	</nav>
+</header>
 
-<div class="mx-auto max-w-2xl px-3">
+<main class="mx-auto max-w-2xl px-3">
 	<div class="py-40">
 		<h1 class="text-center text-3xl font-bold">
 			Hello <span class="inline-block origin-[70%_70%] animate-wave-animation">👋</span>
@@ -80,7 +84,7 @@
 		</ul>
 	</div>
 
-	<section>
+	<section class="mb-16">
 		<h2 class="mb-2 text-xl font-bold">Experience</h2>
 
 		<ol class="relative border-l border-gray-200 dark:border-gray-700">
@@ -96,4 +100,18 @@
 			/>
 		</ol>
 	</section>
-</div>
+
+	<section class="mb-16">
+		<h2 class="mb-2 text-xl font-bold">Contact</h2>
+		<p class="text-slate-300">
+			Reach out to me at <a href="mailto:sulaimanahmad321@gmail.com">sulaimanahmad321@gmail.com</a>
+		</p>
+	</section>
+</main>
+
+<footer class="mb-8">
+	<hr class="my-6 border-gray-700 sm:mx-auto" />
+	<span class="block text-sm text-gray-400 sm:text-center"
+		>Created with TailwindCSS and SvelteKit (to see what all the hype is about)</span
+	>
+</footer>

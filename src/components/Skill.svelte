@@ -7,6 +7,7 @@
 	const orange = '#fb923c';
 	const green = '#4ade80';
 	const fontSize = 30;
+	const fontFamily = 'Open Sans';
 
 	let animateValues = `${red}; ${red}; ${orange}; ${orange}; ${green}`;
 	let animateKeyTimes = '0; 0.4; 0.5; 0.55; 1';
@@ -30,7 +31,7 @@
 
 	$: if (svg && text1) {
 		textWidth = text1.getComputedTextLength();
-		duration = textWidth / 100;
+		duration = textWidth / 50;
 
 		const bbox = svg.getBBox();
 		svgWidth = bbox.x + bbox.width + bbox.x;
@@ -78,20 +79,18 @@
 			bind:this={text1}
 			x="0"
 			y="25"
-			font-family="sans-serif"
+			font-family={fontFamily}
 			font-size={fontSize}
 			font-weight="900"
-			fill="transparent"
-			class="stroke-white stroke-[0.3] ">{name}</text
+			fill="white">{name}</text
 		>
 		<text
 			x="0"
 			y="25"
-			font-family="sans-serif"
+			font-family={fontFamily}
 			font-size={fontSize}
 			font-weight="900"
-			fill={`url(#pattern-${name})`}
-			class="stroke-white stroke-[0.3]">{name}</text
+			fill={`url(#pattern-${name})`}>{name}</text
 		>
 	</svg>
 </li>

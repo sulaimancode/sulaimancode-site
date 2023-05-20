@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Link from '../components/Link.svelte';
-	import Navlink from '../components/Navlink.svelte';
 	import Skill from '../components/Skill.svelte';
 	import TimelineItem from '../components/TimelineItem.svelte';
 
@@ -26,19 +25,8 @@
 	}
 </script>
 
-<header>
-	<nav
-		class="sticky top-0 flex w-full items-center justify-center gap-4 py-4 px-16 backdrop-blur-sm"
-	>
-		<Navlink>Home</Navlink>
-		<Navlink>Skills</Navlink>
-		<Navlink>Experience</Navlink>
-		<Navlink>Contact</Navlink>
-	</nav>
-</header>
-
 <main class="mx-auto max-w-2xl px-3">
-	<div class="py-40">
+	<div class="py-60">
 		<h1 class="text-center text-3xl font-bold">
 			Hello <span class="inline-block origin-[70%_70%] animate-wave-animation">👋</span>
 			I am Sulaiman, a software engineer based in the UK.
@@ -104,7 +92,10 @@
 	<section class="mb-16">
 		<h2 class="mb-2 text-xl font-bold">Contact</h2>
 		<p class="text-slate-300">
-			Reach out to me at <a href="mailto:sulaimanahmad321@gmail.com">sulaimanahmad321@gmail.com</a>
+			Feel free to reach out to me with anything interesting <a
+				href="mailto:sulaimanahmad321@gmail.com"
+				class="font-bold">sulaimanahmad321@gmail.com</a
+			>
 		</p>
 	</section>
 </main>

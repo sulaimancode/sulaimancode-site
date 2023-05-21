@@ -49,7 +49,7 @@
 			technology. I've honed my skills in Typescript, React and Redux, and I'm always eager to learn
 			more about the latest tools and techniques in the field.
 		</p>
-		<p class="text-slate-300">
+		<p class="mb-4 text-slate-300">
 			Currently I'm working at
 			<Link href="https://www.ocadogroup.com/about-us/ocado-technology/">Ocado Technology</Link>,
 			building robust and accessible UIs for the
@@ -57,6 +57,14 @@
 				>Ocado Smart Platform</Link
 			>.
 		</p>
+		<div class="flex gap-4 text-slate-300">
+			<a href="https://github.com/sulaimancode" class="hover:text-white"
+				><Icon icon="bi:github" width="2rem" height="2rem" /></a
+			>
+			<a href="https://www.linkedin.com/in/slaiman-ahmadshah-057251147/" class="hover:text-white"
+				><Icon icon="bi:linkedin" width="2rem" height="2rem" /></a
+			>
+		</div>
 	</article>
 
 	<div bind:this={skillsElement} class="mb-16">

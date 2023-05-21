@@ -2,6 +2,7 @@
 	import Link from '../components/Link.svelte';
 	import Skill from '../components/Skill.svelte';
 	import TimelineItem from '../components/TimelineItem.svelte';
+	import Icon from '@iconify/svelte';
 
 	let animate = false;
 	let skillsElement: HTMLElement | undefined;
@@ -102,7 +103,17 @@
 
 <footer class="mb-8">
 	<hr class="my-6 border-gray-700 sm:mx-auto" />
-	<span class="block text-sm text-gray-400 sm:text-center"
-		>Created with TailwindCSS and SvelteKit (to see what all the hype is about)</span
-	>
+	<div class="flex items-center gap-1 sm:justify-center">
+		<span class="text-sm text-gray-400"
+			>Created with <Link href="https://tailwindcss.com/">TailwindCSS</Link> and <Link
+				href="https://kit.svelte.dev/">SvelteKit</Link
+			>.
+		</span>
+		<a
+			href="https://github.com/sulaimancode/sulaimancode-site"
+			class="flex items-center gap-1 text-sm text-gray-400 hover:cursor-pointer hover:text-white"
+		>
+			<Icon icon="bi:github" /> Source
+		</a>
+	</div>
 </footer>

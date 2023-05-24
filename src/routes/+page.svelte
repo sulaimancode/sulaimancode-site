@@ -26,6 +26,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Sulaiman Ahmadshah - Homepage</title>
+</svelte:head>
+
 <main class="mx-auto max-w-2xl px-3">
 	<div class="py-60">
 		<h1 class="text-center text-3xl font-bold">

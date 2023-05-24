@@ -82,7 +82,8 @@
 			font-family={fontFamily}
 			font-size={fontSize}
 			font-weight="900"
-			fill="white">{name}</text
+			fill="white"
+			aria-hidden="true">{name}</text
 		>
 		<text
 			x="0"
@@ -90,7 +91,9 @@
 			font-family={fontFamily}
 			font-size={fontSize}
 			font-weight="900"
-			fill={`url(#pattern-${name})`}>{name}</text
+			fill={`url(#pattern-${name})`}
+			aria-hidden="true">{name}</text
 		>
 	</svg>
+	<span class="sr-only">{name}</span>
 </li>

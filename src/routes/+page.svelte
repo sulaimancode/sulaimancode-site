@@ -62,13 +62,14 @@
 			>.
 		</p>
 		<div class="flex gap-4 text-slate-300">
-			<a href="https://github.com/sulaimancode" class="hover:text-white"
-				><Icon icon="bi:github" width="2rem" height="2rem" />
-				<span class="sr-only">Github</span>
+			<a href="https://github.com/sulaimancode" class="hover:text-white" aria-label="Git hub"
+				><Icon icon="bi:github" width="2rem" height="2rem" aria-hidden="true" />
 			</a>
-			<a href="https://www.linkedin.com/in/slaiman-ahmadshah-057251147/" class="hover:text-white"
-				><Icon icon="bi:linkedin" width="2rem" height="2rem" />
-				<span class="sr-only">LinkedIn</span>
+			<a
+				href="https://www.linkedin.com/in/slaiman-ahmadshah-057251147/"
+				class="hover:text-white"
+				aria-label="Linked in"
+				><Icon icon="bi:linkedin" width="2rem" height="2rem" aria-hidden="true" />
 			</a>
 		</div>
 	</article>

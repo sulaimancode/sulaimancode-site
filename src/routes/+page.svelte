@@ -108,9 +108,8 @@
 	<section class="mb-16">
 		<h2 class="mb-2 text-xl font-bold">Contact</h2>
 		<p class="text-slate-300">
-			Feel free to reach out to me with anything interesting <a
-				href="mailto:sulaimanahmad321@gmail.com"
-				class="font-bold">sulaimanahmad321@gmail.com</a
+			Feel free to reach out to me with anything interesting <Link
+				href="mailto:sulaimanahmad321@gmail.com">sulaimanahmad321@gmail.com</Link
 			>
 		</p>
 	</section>
